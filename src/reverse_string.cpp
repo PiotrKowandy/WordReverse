@@ -29,6 +29,7 @@ void switch_string3(std::string& word){
 	}
 }
 
+/*
 void switch_string4(std::string& word){
 	if (word.size() > 2){
 		std::string::iterator it_begin = word.begin();
@@ -41,3 +42,4 @@ void switch_string4(std::string& word){
 		}
 	}
 }
+*/
