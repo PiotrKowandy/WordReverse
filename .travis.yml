@@ -16,15 +16,9 @@ cache:
     - ${TRAVIS_BUILD_DIR}/test/
 
 script:
-      - cd ..
       - mkdir build
       - cd build
       - CXX=/usr/bin/g++-7 C=/usr/bin/gcc-7 cmake ..
-      - ls -l ../
-      - ls -al
-        - mkdir lib
-      - cd lib
-      - git clone https://github.com/google/googletest/
       - make all
 
 after_success:
