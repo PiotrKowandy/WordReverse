@@ -19,6 +19,7 @@ script:
       - cd build
       - CXX=/usr/bin/g++-7 C=/usr/bin/gcc-7 cmake ..
       - ls -l ../
+      - ls -al
       - make all
 
 after_success:
