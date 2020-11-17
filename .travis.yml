@@ -20,7 +20,9 @@ script:
       - cd build
       - CXX=/usr/bin/g++-7 C=/usr/bin/gcc-7 cmake ..
       - git clone https://github.com/google/googletest/
-      - cmake --build
+      - ls -l
+      - make all
+      - ./test/reverse_string_test
 
 after_success:
         - echo "success"
