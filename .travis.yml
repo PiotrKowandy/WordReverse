@@ -11,7 +11,6 @@ addons:
 
 cache:
   directories:
-    - ${TRAVIS_BUILD_DIR}/lib/
     - ${TRAVIS_BUILD_DIR}/src/
     - ${TRAVIS_BUILD_DIR}/test/
 
