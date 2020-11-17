@@ -20,7 +20,7 @@ script:
       - cd build
       - CXX=/usr/bin/g++-7 C=/usr/bin/gcc-7 cmake ..
       - git clone https://github.com/google/googletest/
-      - make all
+      - cmake --build
 
 after_success:
         - echo "success"
