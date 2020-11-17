@@ -30,7 +30,7 @@ void switch_string3(std::string& word){
 }
 
 void switch_string4(std::string& word){
-	if (word.size() > 1){
+	if (word.size() > 0){
 		std::string::iterator it_begin = word.begin();
 		size_t size_of_word = word.size()-1;
 
