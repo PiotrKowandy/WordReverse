@@ -7,4 +7,4 @@ include_directories(src)
 
 add_subdirectory(src)
 add_subdirectory(test)
-add_subdirectory(lib)
+add_subdirectory(lib/googletest)

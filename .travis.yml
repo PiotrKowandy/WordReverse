@@ -19,6 +19,7 @@ cache:
     - ${TRAVIS_BUILD_DIR}/test/
 
 script:
+      - cache --delete
       - mkdir build
       - cd build
       - CXX=/usr/bin/g++-7 C=/usr/bin/gcc-7 cmake ..
