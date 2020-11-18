@@ -4,10 +4,8 @@ os: linux
 addons:
   apt:
     packages:
-      - valgring
       - cmake
       - g++-7
-      - clang11
     sources:
       - ubuntu-toolchain-r-test
 
