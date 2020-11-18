@@ -22,6 +22,9 @@ script:
       - make all
       - ./test/reverse_string_test
 
+cache: 
+  - bundler
+
 after_success:
         - echo "success"
 
