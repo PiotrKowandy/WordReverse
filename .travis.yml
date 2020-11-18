@@ -4,14 +4,17 @@ os: linux
 addons:
   apt:
     packages:
-      - valgrind
+      - valgring
+      - cmake
       - g++-7
-    sources: &sources
+      - clang11
+    sources:
       - ubuntu-toolchain-r-test
 
 cache:
+  - bundler
   directories:
-    - ${TRAVIS_BUILD_DIR}/lib/
+    - ${TRAVIS_BUILD_DIR}/lib/googletest
     - ${TRAVIS_BUILD_DIR}/src/
     - ${TRAVIS_BUILD_DIR}/test/
 
@@ -21,9 +24,6 @@ script:
       - CXX=/usr/bin/g++-7 C=/usr/bin/gcc-7 cmake ..
       - make all
       - ./test/reverse_string_test
-
-cache: 
-  - bundler
 
 after_success:
         - echo "success"
