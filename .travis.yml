@@ -20,6 +20,7 @@ script:
       - cd build
       - CXX=/usr/bin/g++-7 C=/usr/bin/gcc-7 cmake ..
       - make all
+      - ./test/reverse_string_test
 
 after_success:
         - echo "success"
