@@ -13,10 +13,6 @@ addons:
 
 cache:
   - bundler
-  directories:
-    - ${TRAVIS_BUILD_DIR}/lib/googletest
-    - ${TRAVIS_BUILD_DIR}/src/
-    - ${TRAVIS_BUILD_DIR}/test/
 
 script:
       - cache --delete
