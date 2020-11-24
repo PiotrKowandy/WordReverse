@@ -28,6 +28,12 @@ TEST(SwitchStringTests, onlydigits){
     EXPECT_EQ("1", test_word);
 }
 
+TEST(SwitchStringTests, twoDifferentWords){
+    std::string test_word = "awesome";
+    switch_string(test_word);
+    EXPECT_FALSE("great" == test_word);
+}
+
 //switch_string2(std::string& word)
 TEST(SwitchStringTests2, emptyString2){
     std::string test_word = "";
@@ -51,6 +57,12 @@ TEST(SwitchStringTests2, onlydigits2){
     std::string test_word = "1";
     switch_string2(test_word);
     EXPECT_EQ("1", test_word);
+}
+
+TEST(SwitchStringTests2, twoDifferentWords2){
+    std::string test_word = "awesome";
+    switch_string2(test_word);
+    EXPECT_FALSE("great" == test_word);
 }
 
 //switch_string3(std::string& word)
@@ -78,6 +90,11 @@ TEST(SwitchStringTests3, onlydigits3){
     EXPECT_EQ("1", test_word);
 }
 
+TEST(SwitchStringTests3, twoDifferentWords3){
+    std::string test_word = "awesome";
+    switch_string3(test_word);
+    EXPECT_FALSE("great" == test_word);
+}
 
 //switch_string4(std::string& word)
 TEST(SwitchStringTests4, emptyString2){
@@ -102,4 +119,10 @@ TEST(SwitchStringTests4, onlydigits2){
     std::string test_word = "1";
     switch_string4(test_word);
     EXPECT_EQ("1", test_word);
+}
+
+TEST(SwitchStringTests4, twoDifferentWords4){
+    std::string test_word = "awesome";
+    switch_string4(test_word);
+    EXPECT_FALSE("great" == test_word);
 }
