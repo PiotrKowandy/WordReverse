@@ -1,3 +1,4 @@
 /build
 /googletest
 .DS_Store
+.vscode

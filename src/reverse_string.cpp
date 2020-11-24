@@ -4,6 +4,8 @@
 #include <cctype>
 #include <algorithm>
 
+#include <iostream>
+
 void switch_string(std::string& word) {
 
 	int size_of_word = word.size()-1;
@@ -31,10 +33,16 @@ void switch_string3(std::string& word){
 
 void switch_string4(std::string& word){
 
-	std::string::iterator it_begin = word.begin();
-	std::string::iterator it_end = word.end();
+	if (word.size() > 0){
+		std::string::iterator it_begin = word.begin();
+		std::string::iterator it_end = word.end() - 1;
+		size_t counter = word.size()/2;
 
-	while (it_begin != it_end){
-		std::swap(*it_begin, *it_end);
+		while (counter != 0){
+			std::swap(*it_begin, *it_end);
+			it_begin++;
+			it_end--;
+			counter--;
+		}
 	}
 }
