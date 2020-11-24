@@ -28,3 +28,13 @@ void switch_string3(std::string& word){
 		word[i] = temp;
 	}
 }
+
+void switch_string4(std::string& word){
+
+	std::string::iterator it_begin = word.begin();
+	std::string::iterator it_end = word.end();
+
+	while (it_begin != it_end){
+		std::swap(*it_begin, *it_end);
+	}
+}
